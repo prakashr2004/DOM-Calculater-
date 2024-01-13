@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="innercontainer">
+                <div class="inputbox">
+                    <input type="text" id="text" placeholder="0">
+                </div>
+                <div class="innercontainer1">
+                    <button id="clear">c</button>
+                    <button id="delete" onclick="del()">Del</button>
+                    <button id="mod" onclick="num('%')">%</button>
+                    <button id="div" onclick="num('/')">/</button>
+                </div>
+                <div class="innercontainer2">
+                    <button id="seven" onclick="num('7')">7</button >
+                    <button id="eight" onclick="num('8')">8</button>
+                    <button id="nine" onclick="num('9')">9</button >
+                    <button id="mul" onclick="num('*')">*</button>
+                </div>
+                <div class="innercontainer3">
+                    <button id="four" onclick="num('4')">4</button>
+                    <button id="five" onclick="num('5')">5</button>
+                    <button id="six" onclick="num('6')">6</button>
+                    <button id="sub" onclick="num('-')">-</button>
+                </div>
+                <div class="innercontainer4">
+                    <button id="one" onclick="num('1')">1</button>
+                    <button id="two" onclick="num('2')">2</button>
+                    <button id="three" onclick="num('3')">3</button>
+                    <button id="add" onclick="num('+')">+</button>
+                </div>
+                <div class="innercontainer5">
+                    <div class="dotzerobtn">
+                        <button id="dot" onclick="num('.')"><b>.</b></button>
+                        <button id="zero" onclick="num('0')">0</button>
+                    </div>
+                    <div class="equal">
+                        <button id="equalto" onclick="equal()">=</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
